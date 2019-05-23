@@ -1,0 +1,52 @@
+.user-name {
+  width: 280px;
+  height: 40px;
+  font-family: Raleway;
+  font-size: 35px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.user-login {
+  width: 280px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+.item-user {
+  width: 240px;
+  height: 22px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+.icon-user {
+  width: 24px;
+  height: 24px;
+}
+.star-icon {
+  width: 25.5px;
+  height: 24.5px;
+}
+
+.img-user {
+  width: 280px;
+  height: 280px;
+}
+
+

@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <img [src]="user.avatar_url" class="img-user" alt="{{user.name}}">
+      <h2 class='user-name'>{{user.name}}</h2>
+      <p class='user-login'>{{user.login}}</p>
+      <p class='user-login' *ngIf="user.bio != null">Bio: {{user.bio}}</p>
+      <p class='user-login'> {{user.email}}</p>
+      <p class='item-user' *ngIf="user.location != null" ><img src="assets/location_icon.svg" class="icon-user"   alt="">{{user.location}}</p>
+      <p class='item-user'><img src="assets/repositorie_icon.svg" class="icon-user" alt="">{{user.public_repos}}</p>
+      <p class='item-user'><img src="assets/followers_icon.svg" class="icon-user" alt=""> {{user.followers}}-followers</p>
+      <p class='item-user'><i class="fas fa-user-friends"></i> {{user.following}}-following</p>
+    </div>
+    <div class="col-8">
+      <div class="row" *ngFor="let repos of repos  | orderBy: order : reverse : false ">
+        <div class="col">
+          <h1 style='color: #ac53f2;
+          font-family: Raleway;
+          font-size: 35px;'>{{repos.name}}</h1>
+          <p style='
+          font-family: Raleway;
+          font-size: 20px;
+          font-weight: 300;'>{{repos.description}} </p>
+          <p class='item-user'> <span><img src="assets/star_icon.svg" class="star-icon" alt="">  </span>  {{repos.stargazers_count}}</p>
+          <hr/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

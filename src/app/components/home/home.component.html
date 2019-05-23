@@ -1,0 +1,22 @@
+<div class="container-fluid header-page">
+    <div class="row" >
+        <div class="col-3">
+          <h1 class='Github-Search' ><strong>Github</strong>  <small class='text-style-1'> Search</small> </h1>
+        </div>
+        <div class="col-8">
+            <form (ngSubmit)="onSubmit()" >
+            <div class="input-group">
+                <input [formControl]="search" type='text' (ngSubmit)="onSubmit()" class="form-control form-control-lg " placeholder="Github User Name">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" style="background-color: #ac53f2 ; "> <img src="assets/Search_Icon.svg" width="20" height="20" alt=""></div>
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-1">
+        </div>
+      </div>
+</div>
+
+<app-user *ngIf="user" [user]="user" [repos]="repos"></app-user>
+<app-not-found *ngIf="error" ></app-not-found>
